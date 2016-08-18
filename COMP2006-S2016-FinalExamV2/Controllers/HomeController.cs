@@ -4,6 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+/**
+ * Author's	name: Nicholas Rowlandson   
+ * Student Number: 200167125
+ * Date	Modified: Thursday, August 18th, 2016
+ * Version: 0.0.1
+ * File: HomeController.cs
+ * Description: This controller is used to manage the home page
+ */
 namespace COMP2006_S2016_FinalExamV2.Controllers
 {
     public class HomeController : Controller

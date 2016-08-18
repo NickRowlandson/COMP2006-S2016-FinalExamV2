@@ -1,0 +1,34 @@
+﻿@model IEnumerable<COMP2006_S2016_FinalExamV2.Models.Genre>
+
+<!--
+    Author's name: Nicholas Rowlandson
+    Student Number: 200167125
+    Date  Modified: Thursday, August 18th, 2016
+    Version: 0.0.1
+    File: Index.cshtml
+    Description: This is the index page for genres
+-->
+
+@{
+    ViewBag.Title = "Genres";
+}
+
+<h2>Genres</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<COMP2006_S2016_FinalExamV2.Models.Album>
+
+<!--
+    Author's name: Nicholas Rowlandson
+    Student Number: 200167125
+    Date  Modified: Thursday, August 18th, 2016
+    Version: 0.0.1
+    File: Index.cshtml
+    Description: This is the index page for albums
+-->
+
+@{
+    ViewBag.Title = "Albums";
+}
+
+<h2>Albums</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Artist.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genre.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Artist.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genre.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+    </tr>
+}
+
+</table>

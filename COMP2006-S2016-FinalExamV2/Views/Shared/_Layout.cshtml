@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿<!--
+    Author's name: Nicholas Rowlandson
+    Student Number: 200167125
+    Date  Modified: Thursday, August 18th, 2016
+    Version: 0.0.1
+    File: _Layout.cshtml
+    Description: This is the shared layout page containing the navbar
+-->
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -16,13 +25,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Music!", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Albums", "Index", "Albums")</li>
+                    <li>@Html.ActionLink("Artists", "Index", "Artists")</li>
+                    <li>@Html.ActionLink("Genres", "Index", "Genres")</li>
                 </ul>
             </div>
         </div>
@@ -31,7 +41,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Music!</p>
         </footer>
     </div>
 
